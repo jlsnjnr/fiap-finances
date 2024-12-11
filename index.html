@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contro.ly</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+  <main class="screen">
+    <div class="bg-blue img">
+      <section class="container py-3">
+        <div class="d-flex justify-content-between">
+          <div class="">
+            <span class="fs-5 color-white fw-light"">Olá, Júnior</span>
+            <h3 class=" color-white fs-2 fw-bold">R$ 20,00</h3>
+              <p class="color-white fs-6 fw-normal">Saldo atual</p>
+          </div>
+
+          <div>
+            <button>
+              <i data-feather="bell" color="white"></i>
+            </button>
+
+            <img class="rounded-circle user-photo ms-3" src="https://avatars.githubusercontent.com/u/70169714?v=4"
+              alt="user photo">
+          </div>
+        </div>
+
+        <div class="d-flex gap-3">
+          <div>
+            <button class="options-button">
+              <i data-feather="send" color="white"></i>
+            </button>
+
+            <span class="color-white mx-auto text-center mt-2">Cadastrar</span>
+          </div>
+          <div>
+            <button class="options-button">
+              <i data-feather="layers" color="white"></i>
+            </button>
+
+            <span class="color-white mx-auto text-center mt-2">Todas</span>
+          </div>
+          <div>
+            <button class="options-button">
+              <i data-feather="thumbs-down" color="white"></i>
+            </button>
+
+            <span class="color-white mx-auto text-center mt-2">Dívidas</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="balance container">
+        <div>
+          <header style="margin: 20px;">
+            <p>Entradas</p>
+            <i data-feather="arrow-up-circle" color="#33cc95"></i>
+          </header>
+          <strong style="margin: 20px;">
+            400
+          </strong>
+        </div>
+
+        <div>
+          <header style="margin: 20px;">
+            <p>Saídas</p>
+            <i data-feather="dollar-sign" color="#E52E4D"></i>
+          </header>
+          <strong style="margin: 20px;">
+            500
+          </strong>
+        </div>
+
+        <div id="highlight-background">
+          <header style="margin: 20px;">
+            <p>Total</p>
+            <i data-feather="dollar-sign" color="white"></i>
+          </header>
+          <strong style="margin: 20px;">
+
+            650
+
+          </strong>
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-gray">
+      <div class="container center">
+        <table>
+          <thead>
+            <tr>
+              <th>Titulo</th>
+              <th>Valor</th>
+              <th>Categoria</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Comida</td>
+              <td id="deposit">
+                400
+              </td>
+              <td>Uber</td>
+              <td>
+                15/05/2002
+              </td>
+            </tr>
+
+            <tr style="margin-top: 5px">
+              <td>Comida</td>
+              <td id="withdraw">
+                400
+              </td>
+              <td>Uber</td>
+              <td>
+                15/05/2002
+              </td>
+            </tr>
+
+            <tr style="margin-top: 5px">
+              <td>Comida</td>
+              <td id="withdraw">
+                400
+              </td>
+              <td>Uber</td>
+              <td>
+                15/05/2002
+              </td>
+            </tr>
+
+            <tr style="margin-top: 5px">
+              <td>Comida</td>
+              <td id="withdraw">
+                400
+              </td>
+              <td>Uber</td>
+              <td>
+                15/05/2002
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+  <script>
+    feather.replace();
+  </script>
+</body>
+
+</html>
